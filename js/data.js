@@ -27,7 +27,7 @@ const createPhoto = function(unicNumberId, unicNumberOfPhoto) {
   };
 };
 
-const photos = () => {
+const {photos} = () => {
   const arrayOfObjects = [];
   const unicId = createArrayFixLength(NUMBER_OF_OBJECTS);
   const unicNumberOfPhoto = createArrayFixLength(NUMBER_OF_OBJECTS);
