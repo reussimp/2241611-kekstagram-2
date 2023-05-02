@@ -1,5 +1,4 @@
 import {getRandomNumber, getArrayElement} from './utils.js';
-
 const NUMBER_OF_OBJECTS = 25;
 const descriptionPhoto = ['Всё отлично!',
   'В целом всё неплохо.Но не всё.',
@@ -8,16 +7,15 @@ const descriptionPhoto = ['Всё отлично!',
   'Я поскользнулся на банановой кожуре и уронил фотоаппарат на кота и у меня получилась фотография лучше.',
   'Лица у людей на фотке перекошены, как будто их избивают.Как можно было поймать такой неудачный момент ? !',];
   const createArrayFixLength = () => {
-    const arrayUnicNumbers = [];
-    while (arrayUnicNumbers.length < NUMBER_OF_OBJECTS) {
-      const randomNumber = getRandomNumber(1, NUMBER_OF_OBJECTS);
-      if(arrayUnicNumbers.indexOf(randomNumber) === -1) {
-        arrayUnicNumbers.push(randomNumber);
-      }
-    }
-    return arrayUnicNumbers;
+const arrayUnicNumbers = [];
+  while (arrayUnicNumbers.length < NUMBER_OF_OBJECTS){
+  const randomNumber = getRandomNumber(1, NUMBER_OF_OBJECTS);
+  if(arrayUnicNumbers.indexOf(randomNumber) === -1){
+  arrayUnicNumbers.push(randomNumber);
+  }
+  }
+  return arrayUnicNumbers;
   };
-  
   //функция для создания 1 объекта
   const createPhoto = function(unicNumberId, unicNumberOfPhoto) {
     return {
