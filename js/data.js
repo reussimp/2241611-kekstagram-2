@@ -50,7 +50,6 @@ function generateComment() {
     name: getRandomElement(NAMES)
   };
 }
-
 function generateDescription() {
   const comments = Array.from({length: getRandomInt(0, 3)}, generateComment);
   const id = getId();
@@ -66,9 +65,6 @@ function generateDescription() {
     comments: comments
   };
 }
-
 const descriptions = Array.from({length: PHOTOS_COUNT}, generateDescription);
-
 isCorrectLength(descriptions, PHOTOS_COUNT);
-
 export {descriptions};
