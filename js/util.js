@@ -1,3 +1,4 @@
+const isEscapeKey = (evt) => evt.key === 'Escape';
 function getRandomInt (from, to) {
   let fromTemp = from;
   let toFrom = to;
@@ -18,3 +19,4 @@ function getRandomInt (from, to) {
 }
 
 export {getRandomInt};
+export { isEscapeKey, getRandomInt };
